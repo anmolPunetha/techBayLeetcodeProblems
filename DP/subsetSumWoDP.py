@@ -15,3 +15,13 @@ class Solution:
         
     def isSubsetSum (self, N, arr, sum):
         return self.helper(0, arr, sum)
+
+
+#cant take an element more than once
+#when number is greater than sum, cant take it
+#global/by reference maintaining of the answer==> memoise/ recursive
+#take/leave
+#core idea:
+    #take and reduce the sum
+    #leave
+    #if any of the call is true, return true, else false
